@@ -13,10 +13,14 @@
 #include "superglobal.h"
 #include "functions.h"
 #include "man.h"
+#include "ken.h"
+#include "ken_animation.h"
+
 #include "kirby.h" //main character
  
 #include "scene1.h" //background
 #include "scene1_animation.h" //
+#include "scene2_animation.h"
 
 
 
@@ -32,12 +36,23 @@ void display() {
 
     ++frame;
     printf("%d\n", frame);
+    glColor3f(1, 1, 1);
+    rectangle(0, 0, SCREEN_WIDTH, SCREEN_WIDTH);
 
-    scene1();
-    
-    movingKirby();
+    //scene1();
+
+    scene2_idle();
+
+    scene2_animation();
+
+   
+    //movingKirby();
 
     //human();
+
+    
+
+    //ken();
 
     
 

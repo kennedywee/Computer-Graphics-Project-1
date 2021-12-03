@@ -143,10 +143,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.h" />
+    <ClInclude Include="ken_animation.h" />
     <ClInclude Include="kirby.h" />
     <ClInclude Include="man.h" />
+    <ClInclude Include="ken.h" />
     <ClInclude Include="scene1.h" />
     <ClInclude Include="scene1_animation.h" />
+    <ClInclude Include="scene2_animation.h" />
     <ClInclude Include="superglobal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
